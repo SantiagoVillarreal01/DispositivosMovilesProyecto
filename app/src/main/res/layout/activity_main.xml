@@ -12,62 +12,61 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="24dp">
-
+        android:layout_margin="26dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="24dp"
+            android:layout_margin="48dp"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_marginRight="16dp"
                     android:text="Usuario"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    />
+
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:hint="Ingrese su Usuario" />
+                    android:hint="Ingrese su Usuario"
+                    android:textSize="16dp"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text="Password"
-                    android:textSize="18sp" />
+
+                    android:layout_marginRight="16dp"
+                    android:textSize="18sp"/>
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
                     android:hint="Ingrese su contraseña"
-                    android:inputType="textPassword" />
+                    android:inputType="textPassword"
+                    android:textSize="16dp"/>
             </LinearLayout>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="24dp"
                 android:text="Guardar"
+                android:layout_marginTop="24dp"
                 android:textSize="24sp" />
 
         </LinearLayout>
