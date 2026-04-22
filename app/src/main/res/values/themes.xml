@@ -6,4 +6,15 @@
     </style>
 
     <style name="Theme.DispMovilesProyecto" parent="Base.Theme.DispMovilesProyecto" />
+
+    <style name="ButtomStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="cornerRadius">14dp</item>
+        <item name="android:backgroundTint">@color/buttom_color</item>
+        <item name="android:drawableTint">@color/white</item>
+    </style>
+
+    <style name="ButtomMinimal" parent="ButtomStyle">
+        <item name="android:drawableTint">@color/black</item>
+    </style>
 </resources>

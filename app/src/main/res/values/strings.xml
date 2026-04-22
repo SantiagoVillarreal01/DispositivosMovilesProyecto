@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">DispMovilesProyecto</string>
+    <string name="tittle_app_login">Bienvenido de vuelta</string>
+    <string name="subtittle_app_login">Ingresa tus credenciales para continuar</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="username_hint">username</string>
+    <string name="password">Contraseña</string>
+    <string name="password_hint">password</string>
+    <string name="password_forget">¿Olvidaste tu contraseña?</string>
+    <string name="log_in_buttom_text">LOG IN</string>
+    <string name="signing_text">¿No tienes una cuenta?"</string>
 </resources>
