@@ -95,8 +95,11 @@ class Principal : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 //        )
         binding.RvURLs.layoutManager = GridLayoutManager(this,2)
 
-        adapterRecyclerView.lista = optionsEmpresas as MutableList<Empresas>
-        adapterRecyclerView.notifyDataSetChanged()
+//        adapterRecyclerView.lista = optionsEmpresas as MutableList<Empresas>
+//        adapterRecyclerView.notifyDataSetChanged()
+
+        adapterRecyclerView.submitList(optionsEmpresas)
+
     }
 
 
@@ -109,9 +112,13 @@ class Principal : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     }
 
     fun deleteEmpresas(emp : Empresas){
-        var newEmpresas = adapterRecyclerView.lista.minus(emp)
-        adapterRecyclerView.lista = newEmpresas as MutableList<Empresas>
-        adapterRecyclerView.notifyDataSetChanged()
+//        var newEmpresas = adapterRecyclerView.lista.minus(emp)
+//        adapterRecyclerView.lista = newEmpresas as MutableList<Empresas>
+//        adapterRecyclerView.notifyDataSetChanged()
+
+        val currentList = adapterRecyclerView.currentList.toMutableList()
+        currentList.remove(emp)
+        adapterRecyclerView.submitList(currentList)
     }
 
 

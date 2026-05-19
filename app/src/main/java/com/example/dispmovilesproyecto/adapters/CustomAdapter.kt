@@ -3,6 +3,8 @@ package com.example.dispmovilesproyecto.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.dispmovilesproyecto.R
 import com.example.dispmovilesproyecto.databinding.MySpinnerLayoutBinding
@@ -14,10 +16,10 @@ class CustomAdapter(
         //var lista: List<Empresas>,
         var onClick: (Empresas) -> Unit,
         var onDelete : (Empresas) -> Unit
-    ) : RecyclerView.Adapter<CustomAdapter.CustomViewHolder>() {
+    ) : ListAdapter<Empresas, CustomAdapter.CustomViewHolder>(EmpresasDiffCallback()) {
 
 
-    var lista: MutableList<Empresas> = ArrayList<Empresas>()
+    //var lista: MutableList<Empresas> = ArrayList<Empresas>()
 
     class CustomViewHolder (view: View) : RecyclerView.ViewHolder(view) {
 
@@ -26,7 +28,7 @@ class CustomAdapter(
         fun render(item: Empresas,
                    onClick: (Empresas) -> Unit,
                    onDelete: (Empresas) -> Unit) {
-            localBinding.txtEmpresa.setText(item.name)
+            localBinding.txtEmpresa.text = item.name
             Picasso.get().load(item.image).into(localBinding.imgEmpresa)
             localBinding.imgEmpresa.setOnClickListener{
                 onClick(item)
@@ -34,6 +36,17 @@ class CustomAdapter(
             localBinding.txtEmpresa.setOnClickListener{
                 onDelete(item)
             }
+        }
+    }
+
+    class EmpresasDiffCallback : DiffUtil.ItemCallback<Empresas>() {
+
+        override fun areItemsTheSame(oldItem: Empresas, newItem: Empresas): Boolean {
+            return oldItem.name == newItem.name
+        }
+
+        override fun areContentsTheSame(oldItem: Empresas, newItem: Empresas): Boolean {
+            return oldItem == newItem
         }
     }
 
@@ -46,11 +59,10 @@ class CustomAdapter(
     }
 
     override fun onBindViewHolder(holder: CustomViewHolder, position: Int) {
-        holder.render(lista[position], onClick, onDelete)
+        val empresa = getItem(position)
+        holder.render(empresa, onClick, onDelete)
     }
 
-    override fun getItemCount(): Int {
-        return lista.size
-    }
+
 
 }
