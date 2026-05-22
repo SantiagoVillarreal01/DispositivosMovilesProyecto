@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mn_home"
+        android:icon="@drawable/ic_home_24"
+        android:title="Inicio"/>
+    <item
+        android:id="@+id/mn_pag1"
+        android:icon="@drawable/settings_24"
+        android:title="Pagina 1"/>
+    <item
+        android:id="@+id/mn_pag2"
+        android:icon="@drawable/login_24"
+        android:title="Pagina 2"/>
+
+</menu>

@@ -142,23 +142,36 @@ class Principal : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
         }
 
-
-        binding.logoutBtn.setOnClickListener{
-            val dialog =  MaterialAlertDialogBuilder(this)
-                .setTitle("Cerrar Sesion")
-                .setMessage("¿Esta usted seguro de salir de la aplicacion?")
-                .setCancelable(true)
-                .setPositiveButton("Si") { dialog, id ->
-                    val intent = Intent(this, Login3::class.java)
-                    startActivity(intent)
+        binding.bottomNavigationView.setOnItemSelectedListener { item ->
+            when(item.itemId){
+                R.id.mn_home -> {
+                    Snackbar.make(binding.RvURLs, item.title.toString(), Snackbar.LENGTH_LONG).show()
+                    true
                 }
-                .setNegativeButton("No"){
-                        dialog, id -> dialog.cancel()
+                R.id.mn_pag1 -> {
+                    Toast.makeText(this, "Pagina 1", Toast.LENGTH_SHORT).show()
+                    true
                 }
-                .setNeutralButton("Cancelar"){
-                    dialog, id -> dialog.dismiss()
+                R.id.mn_pag2 -> {
+                    val dialog =  MaterialAlertDialogBuilder(this)
+                        .setTitle("Cerrar Sesion")
+                        .setMessage("¿Esta usted seguro de salir de la aplicacion?")
+                        .setCancelable(true)
+                        .setPositiveButton("Si") { dialog, id ->
+                            val intent = Intent(this, Login3::class.java)
+                            startActivity(intent)
+                        }
+                        .setNegativeButton("No"){
+                                dialog, id -> dialog.cancel()
+                        }
+                        .setNeutralButton("Cancelar"){
+                                dialog, id -> dialog.dismiss()
+                        }
+                        .show()
+                    true
                 }
-                .show()
+                else -> false
+            }
         }
 
     }
