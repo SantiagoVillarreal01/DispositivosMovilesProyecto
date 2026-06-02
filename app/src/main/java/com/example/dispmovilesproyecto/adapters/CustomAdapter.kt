@@ -62,7 +62,4 @@ class CustomAdapter(
         val empresa = getItem(position)
         holder.render(empresa, onClick, onDelete)
     }
-
-
-
 }

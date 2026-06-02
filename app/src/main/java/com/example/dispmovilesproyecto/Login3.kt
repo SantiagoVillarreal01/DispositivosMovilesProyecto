@@ -58,7 +58,7 @@ class Login3 : AppCompatActivity() {
             var msg = ""
             if (binding.txtUsername.text.toString() == "admin"
                 && binding.txtPassword.text.toString() == "admin") {
-                var intent = Intent(this, Principal::class.java)
+                var intent = Intent(this, MainActivity2::class.java)
 
                 //Actualizacion 6 de mayo
                 intent.putExtra("xx1", "Bienvenido de nuevo")

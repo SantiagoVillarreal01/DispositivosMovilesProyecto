@@ -1,29 +1,21 @@
 package com.example.dispmovilesproyecto
 
 import android.content.Intent
-import android.graphics.Insets.add
 import android.os.Bundle
-import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.commit
-import com.example.dispmovilesproyecto.databinding.ActivityMainBinding
+import com.example.dispmovilesproyecto.databinding.ActivityMain2Binding
 import com.example.dispmovilesproyecto.fragments.FirstFragment
 import com.example.dispmovilesproyecto.fragments.SecondFragment
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.android.material.snackbar.Snackbar
 
-
-class MainActivity : AppCompatActivity() {
-
-    lateinit var binding: ActivityMainBinding
+class MainActivity2 : AppCompatActivity() {
+    lateinit var binding: ActivityMain2Binding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
         initListeners()
@@ -37,7 +29,7 @@ class MainActivity : AppCompatActivity() {
                     supportFragmentManager.commit{
                         val f1 = FirstFragment()
                         replace(R.id.fragmentViewer, f1)
-                       // addToBackStack(null)
+                        // addToBackStack(null)
 
                     }
                     true
@@ -47,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                     supportFragmentManager.commit{
                         val f1 = SecondFragment()
                         replace(R.id.fragmentViewer, f1)
-                       // addToBackStack(null)
+                        // addToBackStack(null)
 
                     }
                     true

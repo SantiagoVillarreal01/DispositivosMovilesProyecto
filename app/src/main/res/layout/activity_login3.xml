@@ -130,9 +130,5 @@
             android:layout_gravity="start"
             android:layout_marginTop="8dp"
             android:text="@string/signing_text"/>
-
-
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

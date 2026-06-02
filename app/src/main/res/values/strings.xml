@@ -11,4 +11,6 @@
     <string name="password_forget">¿Olvidaste tu contraseña?</string>
     <string name="log_in_buttom_text">LOG IN</string>
     <string name="signing_text">¿No tienes una cuenta?"</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
