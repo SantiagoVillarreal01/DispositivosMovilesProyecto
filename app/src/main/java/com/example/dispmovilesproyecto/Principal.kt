@@ -144,11 +144,11 @@ class Principal : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
         binding.bottomNavigationView.setOnItemSelectedListener { item ->
             when(item.itemId){
-                R.id.mn_home -> {
+                R.id.firstFragment -> {
                     Snackbar.make(binding.RvURLs, item.title.toString(), Snackbar.LENGTH_LONG).show()
                     true
                 }
-                R.id.mn_pag1 -> {
+                R.id.secondFragment -> {
                     Toast.makeText(this, "Pagina 1", Toast.LENGTH_SHORT).show()
                     true
                 }

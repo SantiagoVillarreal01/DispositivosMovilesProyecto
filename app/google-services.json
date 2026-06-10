@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "747644308497",
+    "project_id": "mapsalud2",
+    "storage_bucket": "mapsalud2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747644308497:android:3ba4dd91eef6c8d0d9f5b0",
+        "android_client_info": {
+          "package_name": "com.example.dispmovilesproyecto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEoaRp1u14tKWb5Y4Sksf1jDjvF0O_k3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

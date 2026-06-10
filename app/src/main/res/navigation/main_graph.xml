@@ -34,6 +34,7 @@
             app:argType="integer" />
         <argument
             android:name="name"
-            app:argType="string" />
+            app:argType="string"
+            android:defaultValue="xxx" />
     </fragment>
 </navigation>

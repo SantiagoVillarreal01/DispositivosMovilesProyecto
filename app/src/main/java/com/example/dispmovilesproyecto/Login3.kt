@@ -59,18 +59,14 @@ class Login3 : AppCompatActivity() {
             if (binding.txtUsername.text.toString() == "admin"
                 && binding.txtPassword.text.toString() == "admin") {
                 var intent = Intent(this, MainActivity2::class.java)
-
-                //Actualizacion 6 de mayo
                 intent.putExtra("xx1", "Bienvenido de nuevo")
-
-
                 startActivity(intent)
 
             }
             else
                 Toast.makeText(
                     this,
-                    "Nombre de usuario/Contraseniac incorrecto",
+                    "Nombre de usuario/Contraseña incorrecto",
                     Toast.LENGTH_SHORT
                 ).show()
         }
