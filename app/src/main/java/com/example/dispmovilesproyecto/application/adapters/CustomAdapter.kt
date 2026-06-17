@@ -1,4 +1,4 @@
-package com.example.dispmovilesproyecto.adapters
+package com.example.dispmovilesproyecto.application.adapters
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,14 +8,14 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.dispmovilesproyecto.R
 import com.example.dispmovilesproyecto.databinding.MySpinnerLayoutBinding
-import com.example.dispmovilesproyecto.dto.Empresas
+import com.example.dispmovilesproyecto.data.local.dto.Empresas
 import com.squareup.picasso.Picasso
 
 
 class CustomAdapter(
         //var lista: List<Empresas>,
-        var onClick: (Empresas) -> Unit,
-        var onDelete : (Empresas) -> Unit
+    var onClick: (Empresas) -> Unit,
+    var onDelete : (Empresas) -> Unit
     ) : ListAdapter<Empresas, CustomAdapter.CustomViewHolder>(EmpresasDiffCallback()) {
 
 

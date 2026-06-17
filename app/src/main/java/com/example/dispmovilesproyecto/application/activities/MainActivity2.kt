@@ -1,15 +1,11 @@
-package com.example.dispmovilesproyecto
+package com.example.dispmovilesproyecto.application.activities
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.commit
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import com.example.dispmovilesproyecto.R
 import com.example.dispmovilesproyecto.databinding.ActivityMain2Binding
-import com.example.dispmovilesproyecto.fragments.FirstFragment
-import com.example.dispmovilesproyecto.fragments.SecondFragment
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class MainActivity2 : AppCompatActivity() {
     lateinit var binding: ActivityMain2Binding

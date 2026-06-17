@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/firstFragment"
-        android:name="com.example.dispmovilesproyecto.fragments.FirstFragment"
+        android:name="com.example.dispmovilesproyecto.application.fragments.FirstFragment"
         android:label="fragment_first"
         tools:layout="@layout/fragment_first" >
         <action
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
-        android:name="com.example.dispmovilesproyecto.fragments.SecondFragment"
+        android:name="com.example.dispmovilesproyecto.application.fragments.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" >
         <action

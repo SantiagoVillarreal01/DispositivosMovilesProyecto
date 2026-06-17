@@ -1,4 +1,4 @@
-package com.example.dispmovilesproyecto.dto
+package com.example.dispmovilesproyecto.data.local.dto
 
 data class Empresas (
     val name: String,

@@ -1,10 +1,11 @@
-package com.example.dispmovilesproyecto
+package com.example.dispmovilesproyecto.application.activities
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.dispmovilesproyecto.R
 
 class Login2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

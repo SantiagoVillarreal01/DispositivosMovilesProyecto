@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="@color/white"
-    tools:context=".Principal">
+    tools:context=".application.activities.Principal">
 
     <LinearLayout
         android:id="@+id/linearlayout"

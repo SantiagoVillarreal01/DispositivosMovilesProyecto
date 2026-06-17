@@ -1,14 +1,13 @@
-package com.example.dispmovilesproyecto.fragments
+package com.example.dispmovilesproyecto.application.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.dispmovilesproyecto.R
-import com.example.dispmovilesproyecto.databinding.FragmentFirstBinding
 import com.example.dispmovilesproyecto.databinding.FragmentSecondBinding
 import androidx.navigation.fragment.findNavController
+import com.example.dispmovilesproyecto.R
 
 
 class SecondFragment : Fragment() {

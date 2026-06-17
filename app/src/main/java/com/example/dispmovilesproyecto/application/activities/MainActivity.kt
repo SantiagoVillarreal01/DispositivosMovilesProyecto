@@ -1,19 +1,8 @@
-package com.example.dispmovilesproyecto
+package com.example.dispmovilesproyecto.application.activities
 
-import android.content.Intent
-import android.graphics.Insets.add
 import android.os.Bundle
-import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.fragment.app.commit
 import com.example.dispmovilesproyecto.databinding.ActivityMainBinding
-import com.example.dispmovilesproyecto.fragments.FirstFragment
-import com.example.dispmovilesproyecto.fragments.SecondFragment
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
-import com.google.android.material.snackbar.Snackbar
 
 
 class MainActivity : AppCompatActivity() {

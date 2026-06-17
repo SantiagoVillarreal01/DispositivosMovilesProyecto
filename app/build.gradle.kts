@@ -69,4 +69,11 @@ dependencies {
 
     implementation(platform("com.google.firebase:firebase-bom:34.14.0"))
     implementation("com.firebaseui:firebase-ui-auth:9.0.0")
+    implementation("com.google.firebase:firebase-firestore")
+
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.10.0")
+    implementation("androidx.fragment:fragment-ktx:1.8.9") // Needed for easy initialization
+
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.10.0")
+
 }
